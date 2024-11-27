@@ -1,0 +1,67 @@
+import 'package:flutter/material.dart';
+
+class LoginScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Welcome Back'),
+      ),
+      
+            TextField(
+              decoration: InputDecoration(labelText: 'Email/Phone'),
+            ),
+
+            // Password field
+            TextField(
+              decoration: InputDecoration(labelText: 'Password'),
+              obscureText: true,
+            ),
+
+            // Forgot password link
+            TextButton(
+              onPressed: () {},
+              child: Text('Forgot Password?'),
+            ),
+
+            // Remember me checkbox
+            Row(
+              children: [
+                Checkbox(value: false, onChanged: (value) {}),
+                Text('Remember me'),
+              ],
+            ),
+
+            // Sign in with OTP button
+            ElevatedButton(
+              onPressed: () {},
+              child: Text('Sign in with OTP'),
+            ),
+
+            // Social media login options
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                IconButton(
+                  icon: Icon(Icons.g_mobiledata),
+                  onPressed: () {},
+                )
+                  icon: Icon(Icons.facebook),
+                  onPressed: () {},
+                ),
+              ],
+            ),
+
+            // Terms of use and privacy policy links
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+               ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
